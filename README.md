@@ -25,4 +25,10 @@
 
 ## Page 
     - Home Page (optional)
-    - Registration Form
+    - Page 1 “Registration form” --> joe 
+    - Page 2 “sign in form” --> haliem
+      -- options 3 Exams
+    - Start Exam
+    - Page 3 “Exam”
+    - Page 4 “Time Out”
+    - Page 5 “Grades page”

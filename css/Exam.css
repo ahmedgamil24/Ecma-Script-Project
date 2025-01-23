@@ -1,0 +1,17 @@
+body{
+    background: rgb(187, 227, 187);
+    padding: 1rem;
+}
+.question{
+    color: white;
+    margin-bottom: 1.4rem;
+}
+
+
+  .cardQuestion {
+    border-radius: 1rem;
+    border: 1px solid transparent; 
+    background-color: rgb(130, 180, 130);
+    padding: 1.5rem;
+  }
+  

@@ -1,6 +1,5 @@
-import {add} from "./functions.js"
+import * as Lb from "./functions.js";
 
-console.log(add(4,5))
+console.log(Lb.add(4, 5));
 
-
-console.log("ssssss")
+Lb.getUsers();
