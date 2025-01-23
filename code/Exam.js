@@ -41,7 +41,7 @@ async function addQuestionCard(arr) {
         <h5 class="question mb">${q.question}</h5>
         <ul class="list-group">
           <li
-            class="list-group-item d-flex justify-content-between align-items-center"
+            class="list-group-item d-flex justify-content-between align-items-center"   
           >
           ${q.answers[0]}
           </li>
