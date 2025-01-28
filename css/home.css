@@ -1,0 +1,15 @@
+ul li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-weight: bold;
+    font-size: large;
+    color: aliceblue;
+}
+body{
+    /* background-color: rgb(143, 159, 141); */
+}

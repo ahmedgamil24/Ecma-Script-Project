@@ -1,0 +1,13 @@
+.container{
+    /* background-color: rgb(14, 147, 103); */
+}
+
+label{
+    color: rgb(246, 245, 245);
+}
+form{
+    border-radius: 7px;
+}
+input{
+    /* border-radius: 3px; */
+}
