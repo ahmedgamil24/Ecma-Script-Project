@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  
+}
 body{
     background: rgb(187, 227, 187);
     padding: 1rem;
@@ -15,3 +19,57 @@ body{
     padding: 1.5rem;
   }
   
+
+  /* arrows section */
+
+  .arrow{
+    font-size : 30px;
+    font-weight : 900;
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+
+  .arrow:hover{
+    background-color: rgb(101, 160, 101);
+    border-radius: 50%;
+  }
+
+
+  /* flag */
+  .color-red-toggle{
+    color: red;
+  }
+
+
+  .question_flags li{
+    background-color: rgb(101, 160, 101);
+    color: white;
+    font-weight: bold;
+    border: none;
+    
+  }
+
+  .question_flags div{
+    background-color: rgb(101, 160, 101);
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid;
+  }
+
+   /* Question Flags */
+   .question_flags .flag{
+      color: red;
+   }
+
+   /* Timer */
+  
+   .bi-stopwatch{
+     font-size: 20px;
+   }
+
+   /* Toggle Class */
+   .questionSelected {
+    background-color: rgb(112, 171, 112);
+    color: white;
+   }
