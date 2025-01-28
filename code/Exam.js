@@ -14,7 +14,7 @@ let flagged = [];
 async function getQuestion() {
   let loading = document.querySelector(".spinner-border");
   try {
-    let res = await fetch("./questions/questions.json");
+    let res = await fetch("../questions/questions.json");
     questions = await res.json();
   } catch (e) {
     console.log(e);
@@ -49,17 +49,17 @@ async function addQuestionCard(arr) {
       </div>
         <ul class="list-group">
           <li
-            class="list-group-item d-flex justify-content-between align-items-center answer" 
+            class="list-group-item d-flex justify-content-between align-items-center answer mb-2" 
           >
           ${q.answers[0]}
           </li>
           <li
-            class="list-group-item d-flex justify-content-between align-items-center answer"
+            class="list-group-item d-flex justify-content-between align-items-center answer mb-2"
           >
           ${q.answers[1]}
           </li>
           <li
-            class="list-group-item d-flex justify-content-between align-items-center answer"
+            class="list-group-item d-flex justify-content-between align-items-center answer mb-2"
           >
           ${q.answers[2]}
           </li>
@@ -76,6 +76,14 @@ async function addQuestionCard(arr) {
       }
     });
   }
+
+  /// reapplying flagged style
+  let flaggedBefore = document.querySelector(".flagCard");
+  flagged.forEach((flag) => {
+    if (counter === flag) {
+      flaggedBefore.classList.add("color-red-toggle");
+    }
+  });
 }
 
 async function init() {
@@ -128,7 +136,6 @@ document.querySelector(".question_flags").addEventListener("click", (e) => {
 
     removeFlagged(deleteId);
 
-
     flag.closest(".flaggedQuestion").remove();
     const flagCard = document.querySelector(".bi-flag-fill");
     flagCard.classList.remove("color-red-toggle");
@@ -139,8 +146,10 @@ function FlagQuestion() {
   if (!flagged.includes(counter)) {
     console.log("Add Me");
     let listFlag = document.querySelector(".list-flags");
-    listFlag.innerHTML += `<div class="flaggedQuestion d-flex align-items-center justify-content-between p-2" data-id= "${counter}">
-            <li class="list-group-item">Question ${counter + 1}</li>
+    listFlag.innerHTML += `<div class="flaggedQuestion d-flex align-items-center justify-content-between p-2" data-id= "${counter}" onClick="findQuestion(this)">
+            <li class="list-group-item border-remove">Question ${
+              counter + 1
+            }</li>
             <div class="iconContainer flag p-1 border-0">
               <i class="bi bi-flag-fill"></i>
             </div>
@@ -175,8 +184,11 @@ function showTimer() {
 
   document.querySelector(".countDown").innerHTML = `${minutes}:${Seconds}`;
 
-  if (minutes < 3) {
+  if (minutes < 2) {
     document.querySelector(".timer").style.color = "red";
+  }
+  if (minutes === 0 && seconds === 0) {
+    window.location.href = "../pages/TimeOut.html";
   }
   seconds--;
 }
@@ -207,7 +219,7 @@ document
 function getSavedAnswer(questionNumber) {
   const savedAnswer = correctAnswers.find(
     (ans) => ans.questionsNumber === questionNumber
-  );  
+  );
   return savedAnswer ? savedAnswer.answer : null;
 }
 
@@ -229,8 +241,44 @@ function calculateAnswer() {
   });
   let result = Math.floor((total / 6) * 100);
   console.log(result);
+
+  // oldUser = JSON.parse(oldUser)[0];
+  // oldUser = { ...oldUser, score: result };
+  // oldUser = JSON.stringify(oldUser);
+
+  // localStorage.setItem("newUser", oldUser);
+
+  // let oldUser = localStorage.getItem("newUser") || [];
+  // oldUser = JSON.parse(oldUser); //
+  let oldUser = JSON.parse(localStorage.getItem("newUser")) || [];
+  
+  // console.log(user);
+  let newUser = {
+    firstName: oldUser[oldUser.length - 1].firstName,
+    lastName: oldUser[oldUser.length - 1].lastName,
+    email: oldUser[oldUser.length - 1].email,
+    password: oldUser[oldUser.length - 1].password,
+    score: result
+  };
+
+  oldUser.pop();
+  oldUser.push(newUser);
+  
+  localStorage.setItem("newUser", JSON.stringify(oldUser));
 }
 
 document.querySelector(".btn-submit").addEventListener("click", () => {
   calculateAnswer();
+  window.location.href = "../pages/Result.html";
 });
+
+/// Get the Question if Clicked
+
+function findQuestion(e) {
+  let numberQuestion = Number(e.dataset.id);
+  counter = numberQuestion;
+  console.log(numberQuestion);
+
+  addQuestionCard(orderedQuestions);
+  document.querySelector(".question_number").innerText = `${counter + 1} of 6`;
+}

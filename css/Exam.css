@@ -1,13 +1,18 @@
+:root{
+  --primary: #4f46e5;
+  --hover: #eef2ff;
+}
 *{
   box-sizing: border-box;
   
 }
 body{
-    background: rgb(187, 227, 187);
+    /* background: rgb(187, 227, 187); */
     padding: 1rem;
+    background-color: #eff2ff ;
 }
 .question{
-    color: white;
+    color: black;
     margin-bottom: 1.4rem;
 }
 
@@ -15,7 +20,8 @@ body{
   .cardQuestion {
     border-radius: 1rem;
     border: 1px solid transparent; 
-    background-color: rgb(130, 180, 130);
+    background-color: white;
+    color: black;
     padding: 1.5rem;
   }
   
@@ -31,14 +37,16 @@ body{
   
 
   .arrow:hover{
-    background-color: rgb(101, 160, 101);
+    /* background-color: rgb(101, 160, 101); */
+    transform: translateY(-10px);
     border-radius: 50%;
   }
-
+  
+  
 
   /* flag */
   .color-red-toggle{
-    color: red;
+    color: var(--primary);
   }
 
 
@@ -51,17 +59,27 @@ body{
   }
 
   .question_flags div{
-    background-color: rgb(101, 160, 101);
+    background-color: var(--hover);
     color: white;
     font-weight: bold;
     border-bottom: 1px solid;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
   }
 
    /* Question Flags */
    .question_flags .flag{
-      color: red;
+      color: var(--primary);
    }
+   .flaggedQuestion li{
+    color: var(--primary);
+    background-color: var(--hover);
+    border: 0 !important;
+   }
+   .question_flags .list-group-item:hover {
+    border: 0!important;
 
+   }
    /* Timer */
   
    .bi-stopwatch{
@@ -70,6 +88,33 @@ body{
 
    /* Toggle Class */
    .questionSelected {
-    background-color: rgb(112, 171, 112);
+    background-color: #eef2ff;
+    border: 1px solid var(--primary) !important;
+    color: black;
+   }
+
+   .list-group{
+    gap: 10px;
+   }
+   .list-group li {
+    border: 1px solid rgb(199, 199, 199) ;
+    border-radius: 10px !important;
+   }
+   .list-group li:hover{
+    border: 1px solid var(--primary) !important;
+   }
+   .border-remove{
+    border: 1px solid var(--hover) !important;
+   }
+
+   .btn-outline-success{
+    background-color: var(--primary);
     color: white;
+    border: 0;
+    padding: 0.5rem;
+    width: 100px;
+   }
+
+   .btn-outline-success:hover{
+    background-color: #655ee6;;
    }

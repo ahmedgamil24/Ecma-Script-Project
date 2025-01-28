@@ -14,7 +14,9 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/Exam.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/Exam.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -22,7 +24,7 @@
       <span class="visually-hidden">Loading...</span>
     </div>
 
-    <section class="timer d-flex justify-content-center align-items-center">
+    <section class="timer d-flex justify-content-center align-items-center mt-4 mb-0" >
       <div class="iconContainer flag p-0 border-0">
         <i class="bi bi-stopwatch"></i>
       </div>
@@ -30,13 +32,13 @@
     </section>
 
     <section
-      class="container container-questions d-flex flex-column mt-4 p-4"
+      class="container container-questions d-flex flex-column mt-0 p-2 " style="max-width:1000px"
     ></section>
 
     <!-- buttons questions -->
 
     <section
-      class="arrows d-flex justify-content-center align-items-center gap-2"
+      class="arrows d-flex justify-content-center align-items-center "
     >
       <span class="d-inline-block arrow-left"
         ><i class="bi bi-arrow-left-short arrow"></i
@@ -48,15 +50,6 @@
         ><i class="bi bi-arrow-right-short arrow"></i
       ></span>
     </section>
-
-    <!-- <div class="cardQuestion mt-2">
-      <div class="headingQuestion d-flex justify-content-around">
-        <h5 class="question mb">
-          A student who earns a J.D. can begin his or her career as a what?
-        </h5>
-        <div class="iconContainer flag"><i class="bi bi-flag-fill"></i></div>
-      </div>
-    </div> -->
 
     <section class="question_flags d-flex justify-content-center">
       <div class="card border-0" style="width: 18rem">
@@ -70,6 +63,8 @@
         </ul>
       </div>
     </section>
+
+
 
     <div class="btn-submit d-flex justify-content-center mt-5">
       <button type="button" class="btn btn-outline-success">Submit</button>

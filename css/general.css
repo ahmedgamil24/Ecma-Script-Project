@@ -1,0 +1,124 @@
+:root{
+    --primary: #03497d;
+    --btn-primary:    #4f46e5;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'NTR';
+    src: url('./fonts/NTR-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+}
+
+/* Package (Style not specified, assumed Regular) */
+@font-face {
+    font-family: 'Package';
+    src: url('./fonts/package.ttf') format('truetype');
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Black.ttf') format('truetype');
+    font-weight: 900; /* Black (Heavy) */
+    font-style: normal;
+}
+
+/* SourceSerifPro Black Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-BlackItalic.ttf') format('truetype');
+    font-weight: 900; /* Black (Heavy) */
+    font-style: italic;
+}
+
+/* SourceSerifPro Bold */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+/* SourceSerifPro Bold Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('../fonts/SourceSerifPro-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: italic;
+}
+
+/* SourceSerifPro ExtraLight */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-ExtraLight.ttf') format('truetype');
+    font-weight: 300; /* ExtraLight */
+    font-style: normal;
+}
+/* SourceSerifPro ExtraLight Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 300; /* ExtraLight */
+    font-style: italic;
+}
+
+/* SourceSerifPro Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Italic.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: italic;
+}
+
+/* SourceSerifPro Light */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+/* SourceSerifPro Light Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-LightItalic.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: italic;
+}
+
+/* SourceSerifPro Regular */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+/* SourceSerifPro SemiBold */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: normal;
+}
+
+/* SourceSerifPro SemiBold Italic */
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: url('./fonts/SourceSerifPro-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600; /* SemiBold */
+    font-style: italic;
+}
+
+
+body {
+    font-family: "NTR", sans-serif;
+}

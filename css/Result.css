@@ -1,0 +1,40 @@
+body{
+    background-color: #f3f3ff;
+}
+
+.ResultContainer{
+    height: 100vh;
+}
+
+.score{
+    background-color: white;
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.btn-start-again{
+    width: 170px;
+    /* height: 40px; */
+    /* padding: 1rem; */
+    padding: 5px;
+    border-radius: 100px !important;
+    background-color: #fdd5e7;
+    
+}
+.btn-start-again .btn{
+    color: #e85577 ;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn-start-again .btn{
+    border:0;
+}
+
+.success{
+    background-color: rgb(76, 172, 76) !important;
+}
+.success .btn{
+    color: white;
+}
