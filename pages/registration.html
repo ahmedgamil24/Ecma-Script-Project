@@ -12,24 +12,30 @@
 
     <!-- Page 1 Registration form -->
 
-    <div class="container bg-success" style="display: flex; height: 100vh; align-items: center; justify-content: center;">
-        <form action="" id="myForm">
-            <label class="py-2" for="firstname">First Name</label><br>
-            <input class="char1" id="firstname" type="text" required>
+    <div class="container bg-" style="display: flex; height: 100vh; align-items: center; justify-content: center;">
+        <form action="" id="myForm" class="">
+            <div class="name"></div>
+            <label class="py-2" for="firstname">First Name</label>
             <br>
-            <label class="py-2" for="lastname">Last Name</label><br>
-            <input class="char2" id="lastname" type="text" required>
+            <input class="char1 form-control" id="firstname" type="text" required placeholder="Jhon">
+            <!-- <br> -->
+            <label class="py-2" for="lastname">Last Name</label>
             <br>
-            <label class="py-2" for="email">Email</label><br>
-            <input class="email" id="email" type="email" required>
+            <input class="char2 form-control" id="lastname" type="text" required placeholder="Doe">
+            <!-- <br> -->
+            <label class="py-2" for="email">Email</label>
             <br>
-            <label class="py-2" for="password">Password</label><br>
-            <input class="pass" id="password" type="password" required>
+            <input class="email form-control" id="email" type="email" required placeholder="you@example.com">
+            <!-- <br> -->
+            <label class="py-2" for="password">Password</label>
             <br>
-            <label class="py-2" for="re-enter-password">Re-enter Password</label><br>
-            <input class="pass " id="re-enter-password" type="password" required>
+            <input class="pass form-control" id="password" type="password" required placeholder="*******">
+            <!-- <br> -->
+            <label class="py-2" for="re-enter-password">Re-enter Password</label>
             <br>
-            <button class="btnsignup mt-3 mb-2 btn btn-success">Sign Up</button>
+            <input class="pass form-control" id="re-enter-password" type="password" required placeholder="*******">
+            <!-- <br> -->
+            <button class="btnsignup mt-3 mb-2 btn btn-success" style="width: 100%; background-color: #4f46e5;">Sign Up</button>
             <br>
             Have already an account? 
             <a href="./signin.html">Sign In</a>

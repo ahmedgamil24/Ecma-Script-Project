@@ -237,6 +237,7 @@ btnSignUp.addEventListener("click", function (e) {
             lastName: inputLastName.value.trim(),
             email: inputEmail.value.trim(),
             password: inputPassword.value.trim(),
+            
         };
 
         oldUser.push(newUser);
