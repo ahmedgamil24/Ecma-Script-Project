@@ -242,14 +242,6 @@ function calculateAnswer() {
   let result = Math.floor((total / 6) * 100);
   console.log(result);
 
-  // oldUser = JSON.parse(oldUser)[0];
-  // oldUser = { ...oldUser, score: result };
-  // oldUser = JSON.stringify(oldUser);
-
-  // localStorage.setItem("newUser", oldUser);
-
-  // let oldUser = localStorage.getItem("newUser") || [];
-  // oldUser = JSON.parse(oldUser); //
   let oldUser = JSON.parse(localStorage.getItem("newUser")) || [];
   
   // console.log(user);
