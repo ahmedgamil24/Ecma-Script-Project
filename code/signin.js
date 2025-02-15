@@ -61,6 +61,13 @@ btnSignIn.addEventListener("click", function(e){
             if(inputPassword.value === oldUser[i].password){
                 clearError(inputEmail);
                 clearError(inputPassword);
+                // update array local storage newUsers
+                // new user = filter !(inputPassword.value === oldUser[i].password)
+                // let newUser = oldUser.filter((obj), function(){
+                //     if (!(inputPassword.value === oldUser[i].password)){
+                //         return 
+                //     }
+                // })
                 window.location.href = "http://127.0.0.1:5500/pages/readytostart.html";
                 return;
             }else{

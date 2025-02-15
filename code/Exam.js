@@ -17,7 +17,7 @@ async function getQuestion() {
     let res = await fetch("../questions/questions.json");
     questions = await res.json();
   } catch (e) {
-    console.log(e);
+    document.location.href = "../pages/Error.html";
   }
   loading.classList.add("d-none");
 }
@@ -40,7 +40,7 @@ async function addQuestionCard(arr) {
   let questionContainer = document.querySelector(".container-questions");
 
   questionContainer.innerHTML = "";
-  questionContainer.innerHTML += `<div class="cardQuestion mt-2" >
+  questionContainer.innerHTML += `<div class="cardQuestion " >
         <div class="headingQuestion d-flex justify-content-between">
         <h5 class="question mb">
           ${q.question}

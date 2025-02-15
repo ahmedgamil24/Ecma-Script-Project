@@ -13,61 +13,84 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/Exam.css" />
-
-    <title>Document</title>
+    <title>Exam</title>
   </head>
   <body>
-    <div class="spinner-border text-secondary" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid d-flex justify-content-around">
+        <span class="navbar text-bold" href="#">Exam</span>
 
-    <section class="timer d-flex justify-content-center align-items-center mt-4 mb-0" >
-      <div class="iconContainer flag p-0 border-0">
-        <i class="bi bi-stopwatch"></i>
-      </div>
-      <h5 class="countDown m-0 ms-1"></h5>
-    </section>
-
-    <section
-      class="container container-questions d-flex flex-column mt-0 p-2 " style="max-width:1000px"
-    ></section>
-
-    <!-- buttons questions -->
-
-    <section
-      class="arrows d-flex justify-content-center align-items-center "
-    >
-      <span class="d-inline-block arrow-left"
-        ><i class="bi bi-arrow-left-short arrow"></i
-      ></span>
-      <div class="d-flex">
-        <p class="question_number m-0 text-bold">1 of 6</p>
-      </div>
-      <span class="d-inline-block arrow-next"
-        ><i class="bi bi-arrow-right-short arrow"></i
-      ></span>
-    </section>
-
-    <section class="question_flags d-flex justify-content-center">
-      <div class="card border-0" style="width: 18rem">
-        <ul class="list-group list-flags">
-          <!-- <div class="flaggedQuestion d-flex align-items-center justify-content-between p-2">
-            <li class="list-group-item">An item</li>
-            <div class="iconContainer flag p-1 border-0">
-              <i class="bi bi-flag-fill"></i>
+        <div class="d-flex justify-content-center">
+          <section
+            class="timer d-flex justify-content-center align-items-center mb-0"
+          >
+            <div class="iconContainer flag p-0 border-0">
+              <i class="bi bi-stopwatch"></i>
             </div>
-          </div> -->
-        </ul>
+            <h5 class="countDown m-0 ms-1"></h5>
+          </section>
+        </div>
+        <a class="navbar-brand" href="signin.html"
+          ><i class="bi bi-box-arrow-left"></i
+        ></a>
       </div>
-    </section>
+    </nav>
 
+    <div
+      class="container container-page d-flex flex-column justify-content-center"
+    >
+      <div
+        class="spinner-border text-secondary d-flex justify-content-center"
+        role="status"
+      >
+        <span class="visually-hidden">Loading...</span>
+      </div>
 
+      <div class="img-container img-exam">
+        <img src="../images/Online test-bro.svg" alt="" />
+      </div>
 
-    <div class="btn-submit d-flex justify-content-center mt-5">
-      <button type="button" class="btn btn-outline-success">Submit</button>
+      <div class="d-flex flex-column justify-content-center">
+        <!-- Questions -->
+        <div
+          class="d-flex flex-sm-row flex-column align-items-center align-items-sm-stretch"
+        >
+          <section
+            class="container container-questions d-flex flex-column mt-0"
+            style="max-width: 1000px"
+          ></section>
+          <!-- flaggedQuestion -->
+          <section class="question_flags d-flex flex-column mt-4 mt-sm-0">
+            <h5 class="Question_header text-center fw-semibold">Question</h5>
+            <div class="card border-0" style="width: 100%">
+              <ul class="list-group list-flags"></ul>
+            </div>
+          </section>
+        </div>
+        <!-- buttons questions -->
+
+        <section class="d-flex justify-content-center">
+          <section
+            class="arrows d-flex justify-content-between align-items-center"
+          >
+            <span class="d-inline-block arrow-left"
+              ><i class="bi bi-arrow-left-circle-fill arrow--style"></i
+            ></span>
+            <div class="d-flex">
+              <p class="question_number m-0 text-bold">1 of 6</p>
+            </div>
+            <span class="d-inline-block arrow-next">
+              <i class="bi bi-arrow-right-circle-fill arrow--style"></i>
+            </span>
+          </section>
+        </section>
+
+        <div class="btn-submit d-flex justify-content-center">
+          <button type="button" class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
     </div>
 
     <script src="../code/Exam.js"></script>

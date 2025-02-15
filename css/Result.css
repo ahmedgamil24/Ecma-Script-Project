@@ -16,8 +16,6 @@ body{
 
 .btn-start-again{
     width: 170px;
-    /* height: 40px; */
-    /* padding: 1rem; */
     padding: 5px;
     border-radius: 100px !important;
     background-color: #fdd5e7;
@@ -38,3 +36,17 @@ body{
 .success .btn{
     color: white;
 }
+
+.img-fail{
+    width: 20rem;
+}
+.fail-img{
+    display: none;
+}
+.success-img{
+    display: none;
+}
+.show-img{
+    display: block;
+}
+
