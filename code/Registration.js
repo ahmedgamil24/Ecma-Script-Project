@@ -243,7 +243,7 @@ btnSignUp.addEventListener("click", function (e) {
         oldUser.push(newUser);
         localStorage.setItem("newUser", JSON.stringify(oldUser));
         // window.Location.href = "http://127.0.0.1:5500/pages/signin.html"
-        window.location.href = "http://127.0.0.1:5500/pages/signin.html";
+        window.location.href = "../pages/signin.html";
     }
 });
 
