@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <!-- <link rel="stylesheet" href="../css/home.css"> -->
 </head>
-<body>
+<body style="background-color: #f3f2ff;">
     
 
     
 
-<div class="container bg-" style="display: flex; flex-direction: column; height: 100vh; align-items: center; justify-content: center; ">
-
-   <pre><p class="mb-0">Online Examination System</p></pre> 
-    <ul style="display: flex; flex-direction: row; justify-content: space-evenly;">
-        <li>
-            <a class="btn btn-primary" href="../pages/registration.html">Sign Up</a>
-            <a class="btn btn-primary" href="../pages/signin.html">Sign In</a>
-            <a class="btn btn-primary" href="">Learn More</a>
-        </li>
-    </ul>
-</div>
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-center min-vh-100 text-center text-lg-start">
+        <div class="image w-100 w-lg-50 text-center mb-4 mb-lg-0">
+            <img src="./home.svg" alt="Home Illustration" class="img-fluid" style="max-width: 60%;">
+        </div>
+        <div class="content w-100 w-lg-50 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-4">Online Examination System</h1>
+            <div class="d-flex flex-column flex-md-row gap-3">
+                <a class="btn btn-primary px-4 py-2" href="../pages/registration.html">Sign Up</a>
+                <a class="btn btn-secondary px-4 py-2" href="../pages/signin.html">Sign In</a>
+                <a class="btn btn-outline-primary px-4 py-2" href="#">Learn More</a>
+                <a class="btn btn-outline-primary px-4 py-2" href="#">Contact Us</a>
+            </div>
+        </div>
+    </div>
 
     <script src="../code/bootstrap.bundle.min.js"></script>
     <script src="../code/home.js"></script>
